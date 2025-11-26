@@ -1,4 +1,6 @@
 import functools
 import operator
 
-print(functools.reduce(operator.add, [1, 2, 3]))
+inp = list(map(int, input("Введите числа для суммирования через пробел: ").split()))
+
+print(functools.reduce(operator.add, inp))
