@@ -13,3 +13,8 @@ class Iter():
             return value
         else:
             raise StopIteration
+
+inp = int(input("Введите количество чисел: "))
+
+for i in Iter(inp):
+    print(i)
