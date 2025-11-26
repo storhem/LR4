@@ -3,3 +3,9 @@ def log(func):
         print(f"Функция {func.__name__} была вызвана")
         return func(*args, **kwargs)
     return wrapper
+
+@log
+def greet():
+    print("Привет!")
+
+greet()
